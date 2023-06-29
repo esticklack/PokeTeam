@@ -19,6 +19,7 @@
                 }
 
                 $.ajax({
+
                     url: "http://poketeam.test/api/verificar-email",
                     type: 'POST',
                     data: {
