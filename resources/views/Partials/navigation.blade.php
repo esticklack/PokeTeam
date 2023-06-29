@@ -7,7 +7,8 @@
         <div class="collapse d-flex navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item">
-              <a class="nav-link" href="#">Inicio</a>
+
+              <a class="nav-link" href="#" >Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Acerca de</a>
