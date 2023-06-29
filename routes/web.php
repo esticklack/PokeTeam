@@ -25,3 +25,10 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('index.login');
 });
+
+Route::get('/recompensa', function () {
+    return view('index.recompensa');
+});
+
+
+

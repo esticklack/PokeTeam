@@ -18,7 +18,7 @@
                 }
 
                 $.ajax({
-                url: "http://infst2.test/api/verificar-email",
+                url: "http://poketeam.test/api/verificar-email",
                 type: 'POST',
                 data: { email: email },
                  dataType: 'json',
@@ -54,7 +54,7 @@
                     alert("las contraseñas deben ser iguales")
                     } else {
 
-                    $.post("http://infst2.test/api/register",
+                    $.post("http://poketeam.test/api/register",
                         $("#form-registro").serialize())
                         .done(function(data) {
                         alert("Se ha guardado correctamente");
@@ -90,6 +90,7 @@
           <div class="form-group">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email">
+            
             <div id="correo_invalido_user_help_block" class="form-text" style="display: none;">
                 <span class="badge text-bg-danger">El correo ingresado no es válido.</span>
             </div>

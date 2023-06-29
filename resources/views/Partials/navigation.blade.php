@@ -18,6 +18,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://poketeam.test/recompensa">Recompensa</a>
+            </li>
           </ul>
           <ul class="navbar-nav text-end">
             <li class="nav-item">
