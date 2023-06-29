@@ -25,3 +25,10 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('index.login');
 });
+
+Route::get('/imagen', function () {
+    $path = public_path('rlaragon\www\PokeTeam\Vamoa.jpeg');
+    return response()->file($path);
+});
+ 
+
