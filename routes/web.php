@@ -30,5 +30,4 @@ Route::get('/imagen', function () {
     $path = public_path('rlaragon\www\PokeTeam\Vamoa.jpeg');
     return response()->file($path);
 });
- 
 

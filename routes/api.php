@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\RegisterController;
+use App\Http\Controllers\Api\RecompensaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,7 @@ Route::post('register', [RegisterController::class, 'register']);
 Route::post('login', [RegisterController::class, 'login']);
 
 Route::post('verificar-email', [RegisterController::class, 'verificarEmail']);
+
+Route::post('verificar-recompensa', [RecompensaController::class, 'verificarRecompensa']);
+
+Route::post('guardar-recompensa/{id}', [RecompensaController::class, 'guardarRecompensa']);

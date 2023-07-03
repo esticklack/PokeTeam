@@ -57,7 +57,9 @@
                 } else {
 
                     $.post("http://poketeam.test/api/register",
+
                             $("#form-registro").serialize())
+
                         .done(function(data) {
                             alert("Se ha guardado correctamente");
                         });
@@ -78,6 +80,7 @@
 @endsection
 
 @section('content')
+
     <div class="row justify-content-center">
         <div class="col-lg-6 my-4">
             <h1>Formulario registro</h1>
