@@ -21,7 +21,7 @@
                     <a class="nav-link color-link bg-link" href="#">Acerca de</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link color-link bg-link" href="#">Servicios</a>
+                    <a class="nav-link color-link bg-link" href="/mapa">Ver Mapa</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link color-link bg-link" href="#">Contacto</a>
@@ -32,6 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link color-link bg-link" href="/login">Iniciar sesión</a>
                 </li>
+                
             </ul>
         </div>
     </nav>

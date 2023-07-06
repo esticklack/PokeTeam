@@ -31,3 +31,6 @@ Route::get('/imagen', function () {
     return response()->file($path);
 });
 
+Route::get('/mapa', function () {
+    return view('index.mapa');
+});
