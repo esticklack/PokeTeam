@@ -26,12 +26,9 @@ Route::get('/login', function () {
     return view('index.login');
 });
 
-Route::get('/recompensa', function () {
-    return view('index.recompensa');
-});
-
-Route::get('/ruleta', function () {
-    return view('index.ruleta');
+Route::get('/imagen', function () {
+    $path = public_path('rlaragon\www\PokeTeam\Vamoa.jpeg');
+    return response()->file($path);
 });
 
 

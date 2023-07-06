@@ -22,7 +22,11 @@
 
         <!-- Scripts -->
         <script src="https://unpkg.com/feather-icons"></script>
-        
+
+        <script>
+        feather.replace();
+        </script>
+
 
     @yield('scripts')
 
@@ -52,7 +56,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2021 Mi Sitio. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>
