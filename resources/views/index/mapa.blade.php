@@ -97,6 +97,7 @@
   </style>
 
   <script>
+    //CHAT
     window.addEventListener("DOMContentLoaded", function () {
       var chatBox = document.getElementById("chat");
       var inputField = document.getElementById("input");
