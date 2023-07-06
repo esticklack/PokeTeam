@@ -38,6 +38,9 @@
                 <li class="nav-item">
                     <a class="nav-link color-link bg-link" href="/recompensa">Recompensa diaria</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link color-link bg-link" href="/pokedex">Recompensa diaria</a>
+                </li>
             </ul>
         </div>
     </nav>
