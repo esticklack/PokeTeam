@@ -32,6 +32,12 @@
                 <li class="nav-item">
                     <a class="nav-link color-link bg-link" href="/login">Iniciar sesión</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link color-link bg-link" href="/ruleta">Ruleta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-link bg-link" href="/recompensa">Recompensa diaria</a>
+                </li>
             </ul>
         </div>
     </nav>
