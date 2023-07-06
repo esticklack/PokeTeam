@@ -1,0 +1,38 @@
+.logo-poketeam {
+    max-width: 250px;
+    margin-left: 20px;
+}
+
+.bg-nav {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 48%, rgba(255, 111, 111, 1) 48%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 48%, rgba(255, 111, 111, 1) 48%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 48%, rgba(255, 111, 111, 1) 48%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ff6f6f", GradientType=1);
+}
+
+.border-nav {
+    border-radius: 15px;
+    border: 5px solid black;
+}
+
+.nav-general {
+    margin-top: 10px;
+}
+
+a {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.color-link {
+    color: white;
+    font-weight: 700;
+
+}
+.bg-link {
+    background-color: #385faa;
+    border-radius: 10px;
+}
+
