@@ -1,22 +1,20 @@
 <?php
 
-namespace App\Http\Controllers\Api;
+namespace App\Http\Controllers\API;
 
-
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+
+use Illuminate\Support\Facades\Auth;
+
+
 use App\Models\User;
 use Symfony\Component\HttpFoundation\Response;
 use Illuminate\Auth\Events\Registered;
 
-class RecompensaController extends Controller
+class RuletaController extends Controller
 {
-    
-    
-    
-    
-    public function verificarRecompensa(Request $request){
+    public function verificarRuleta(Request $request){
         $email = $request->input('email');
 
         
@@ -66,57 +64,26 @@ class RecompensaController extends Controller
     }
 
 
-    public function verificarTiempo(Request $request, $id)
-    {
-        $user = User::where('id', $id)->firstOrFail();
-        $oro = $user->recompensa; 
-
-
-    if ($user) {
-        $tiempoGuardado = $user->tiempo; // Obtener el timestamp guardado en la base de datos
-        $tiempoActual = time(); // Obtener el timestamp actual
-
-        $intervalo = 24 * 60 * 60; // Intervalo de 24 horas en segundos
-
-        if ($tiempoActual - $tiempoGuardado >= $intervalo) {
-            // Han pasado 24 horas, realizar la acción deseada
-            // Por ejemplo, permitir reclamar una recompensa nuevamente
-
-            // Actualizar el campo de tiempo con el nuevo timestamp
-            $user->tiempo = $tiempoActual;
-            $user->save();
-            $tiempoVerificar = true;
-            return response()->json(['tiempo' => $tiempoVerificar, 'oro' => $oro]);
-
-        }
-        else {
-            // Aún no han pasado 24 horas, mostrar un mensaje de error
-            $tiempoVerificar = false;
-            return response()->json(['tiempo' => $tiempoVerificar, 'oro' => $oro]);
-
-        }
-        }
-    }
-
-
     
-    public function guardarRecompensa(Request $request, $id)
+    public function guardarOro(Request $request, $id)
     {
-        $recompensasList = array(100, 200, 300, 400);
-        $recompensaAleatoria = $recompensasList[array_rand($recompensasList)];
-
+        $rcmp = $request->input('recompensa');
         $user = User::where('id', $id)->firstOrFail();
+        
         $recompensaBD = $user->recompensa;  
-        $user->recompensa = $recompensaAleatoria + $recompensaBD;
-        $user->save();
 
-        return response()->json(['recompensaAleatoria' => $recompensaAleatoria]);;
-    }
-
-    
-
+        if ($recompensaBD >= 300){
+            $resultado = $recompensaBD + $rcmp - 300;
+            $user->recompensa = $resultado ;
+            $user->save();
+            
+            return response()->json(['rcmpRuleta' => $resultado, 'verificar' => true]);
+        }else{
+            
+            return response()->json(['rcmpRuleta' => $user->recompensa, 'verificar' => false]);
+        }
         
 
-    
-    
+        
+    }
 }

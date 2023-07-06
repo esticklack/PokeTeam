@@ -30,5 +30,9 @@ Route::get('/recompensa', function () {
     return view('index.recompensa');
 });
 
+Route::get('/ruleta', function () {
+    return view('index.ruleta');
+});
+
 
 
