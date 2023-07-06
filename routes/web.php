@@ -25,3 +25,9 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('index.login');
 });
+
+Route::get('/pokedex', function () {
+    return view('index.pokedex');
+});
+
+
