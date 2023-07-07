@@ -25,3 +25,33 @@ Route::get('/register', function () {
 Route::get('/login', function () {
     return view('index.login');
 });
+
+
+Route::get('/pokedex', function () {
+    return view('index.pokedex');
+});
+
+Route::get('/ruleta', function () {
+    return view('index.ruleta');
+});
+
+Route::get('/recompensa', function () {
+    return view('index.recompensa');
+});
+
+Route::get('/imagen', function () {
+    $path = public_path('rlaragon\www\PokeTeam\Vamoa.jpeg');
+    return response()->file($path);
+});
+
+
+Route::get('/mapa', function () {
+    return view('index.mapa');
+});
+
+
+
+Route::get('/editarperfil', function () {
+    return view('index.editarperfil');
+});
+

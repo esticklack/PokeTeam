@@ -11,8 +11,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <!-- CSS -->
 
     <!-- Favicons -->
@@ -20,6 +22,11 @@
 
         <!-- Scripts -->
         <script src="https://unpkg.com/feather-icons"></script>
+
+        <script>
+        feather.replace();
+        </script>
+
 
     @yield('scripts')
 
@@ -49,7 +56,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2021 Mi Sitio. Todos los derechos reservados.</p>
+      <p>&copy; 2023 Todos los derechos reservados.</p>
     </footer>
   </div>
 </body>
