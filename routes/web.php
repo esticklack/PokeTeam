@@ -44,4 +44,14 @@ Route::get('/imagen', function () {
     return response()->file($path);
 });
 
+<<<<<<< Updated upstream
 
+=======
+Route::get('/mapa', function () {
+    return view('index.mapa');
+});
+
+Route::get('/editarperfil', function () {
+    return view('index.editarperfil');
+});
+>>>>>>> Stashed changes
