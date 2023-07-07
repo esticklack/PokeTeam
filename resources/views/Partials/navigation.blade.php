@@ -32,7 +32,7 @@
                 <li class="nav-item">
                     <a class="nav-link color-link bg-link" href="/login">Iniciar sesión</a>
                 </li>
-                
+
             </ul>
         </div>
     </nav>
