@@ -99,6 +99,15 @@
                     <label for="password">Contraseña</label>
                     <input type="password" class="form-control" id="password" name="password"
                         placeholder="Ingrese su contraseña">
+                    <div id="password_invalida_caracteres" class="form-text" style="display: none;">
+                        <span class="badge text-bg-danger">La contraseña invalida, debe tener minimo 8 caracteres...</span>
+                    </div>
+                    <div id="password_invalida_numeros" class="form-text" style="display: none;">
+                        <span class="badge text-bg-danger">La contraseña debe contener números.</span>
+                    </div>
+                    <div id="password_invalida_letras" class="form-text" style="display: none;">
+                        <span class="badge text-bg-danger">La contraseña debe contener letras.</span>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="password_confirmation">Confirmar Contraseña</label>
